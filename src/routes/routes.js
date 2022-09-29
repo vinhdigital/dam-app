@@ -6,6 +6,7 @@
 import React, { lazy } from 'react';
 
 const LoginPage = lazy(() => import('../containers/LoginPage'));
+const ProfilePage = lazy(() => import('../containers/Pro'));
 
 const WelcomePage = lazy(() => import('../containers/WelcomePage'));
 const DashboardPage = lazy(() => import('../containers/Homepage'));
