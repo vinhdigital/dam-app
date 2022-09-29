@@ -11,6 +11,10 @@ import { useTranslation } from 'react-i18next';
 
 const SubmitButton = ({validateInfoBeforeSending}) => {
   const {t} = useTranslation("common");
+<<<<<<< HEAD
+=======
+
+>>>>>>> vinh
   return (<div>
     <div className='d-flex align-items-center row'>
       <div>

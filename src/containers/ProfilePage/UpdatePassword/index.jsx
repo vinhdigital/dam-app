@@ -109,6 +109,7 @@ const UpdatePassword = observer(
             <form>
               <div className="row">
                 <div className="col-4">
+<<<<<<< HEAD
                   <label className="form-label mb-3" htmlFor="curr_password">
                     <span className="text-blue-0">{t('txt_current_password')}</span>
                   </label>
@@ -132,6 +133,8 @@ const UpdatePassword = observer(
                   )}
                 </div>
                 <div className="col-4">
+=======
+>>>>>>> vinh
                   <label className="form-label mb-3" htmlFor="new_password">
                     <span className="text-blue-0">{t('txt_new_password')}</span>
                   </label>

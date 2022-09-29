@@ -7,6 +7,10 @@ import React, { Component, lazy } from 'react';
 import { observer } from 'mobx-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
+<<<<<<< HEAD
+=======
+import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
+>>>>>>> vinh
 import SimpleReactValidator from 'simple-react-validator';
 import { UPDATE_GENERAL_FIELD_KEY } from '../../../constants/ProfileModule';
 import { witheProfileViewModel } from '../ProfileViewModel/ProfileViewModelContextProvider';
@@ -16,7 +20,11 @@ import '../index.scss';
 import { FORM_FIELD_TYPE } from '../../../constants/FormFieldType';
 import FormComponent from '../../../components/Form';
 import AvatarDAM from '../Layout/AvatarDAM';
+<<<<<<< HEAD
 import SubmitButton from '../Layout/SubmitButton';
+=======
+// import SubmitButton from '../Layout/SubmitButton';
+>>>>>>> vinh
 import ComponentImage from '../../../components/ComponentImage';
 import { Storage } from 'aesirx-dma-lib';
 import { withTranslation } from 'react-i18next';
@@ -109,6 +117,7 @@ const UpdateGeneral = observer(
               readOnly: true,
             },
             {
+<<<<<<< HEAD
               label: 'txt_Email',
               key: UPDATE_GENERAL_FIELD_KEY.EMAIL,
               type: FORM_FIELD_TYPE.INPUT,
@@ -126,6 +135,8 @@ const UpdateGeneral = observer(
               readOnly: true,
             },
             {
+=======
+>>>>>>> vinh
               label: 'txt_Fullname',
               key: UPDATE_GENERAL_FIELD_KEY.FULLNAME,
               type: FORM_FIELD_TYPE.INPUT,
@@ -146,6 +157,7 @@ const UpdateGeneral = observer(
               },
             },
             {
+<<<<<<< HEAD
               label: 'txt_Birthday',
               key: UPDATE_GENERAL_FIELD_KEY.BIRTHDAY,
               type: FORM_FIELD_TYPE.BIRTHDAY,
@@ -221,6 +233,14 @@ const UpdateGeneral = observer(
               changed: (event) => {
                 this.formPropsData[UPDATE_GENERAL_FIELD_KEY.ZIPCODE] = event.target.value;
               },
+=======
+              label: 'txt_Email',
+              key: UPDATE_GENERAL_FIELD_KEY.EMAIL,
+              type: FORM_FIELD_TYPE.INPUT,
+              value: this.formPropsData[UPDATE_GENERAL_FIELD_KEY.EMAIL],
+              className: 'col-6',
+              readOnly: true,
+>>>>>>> vinh
             },
           ],
         },
@@ -233,6 +253,10 @@ const UpdateGeneral = observer(
 
       return (
         <>
+<<<<<<< HEAD
+=======
+
+>>>>>>> vinh
           {!memberInfo ? (
             <Spinner />
           ) : (
@@ -248,17 +272,37 @@ const UpdateGeneral = observer(
 
                 <AvatarDAM>
                   <div
+<<<<<<< HEAD
                     className={`position-relative cursor-pointer wr_upload_images ${
+=======
+                    className={`position-relative  cursor-pointer wr_upload_images ${
+>>>>>>> vinh
                       getUrlImage.length > 0 ? 'active_img' : ''
                     }`}
                   >
                     {!getUrlImage ? (
+<<<<<<< HEAD
                       <div className="wr_img_thumbnail_dam position-relative m-2">
                         <ComponentImage
                           className={`img-thumbnail rounded imgTab`}
                           src={this.formPropsData[UPDATE_GENERAL_FIELD_KEY.AVATAR_DAM]}
                           alt={this.formPropsData[UPDATE_GENERAL_FIELD_KEY.USERNAME]}
                         />
+=======
+                      <div className="wr_img_thumbnail_dam position-relative m-2 ">
+                        <ComponentImage
+                          className={`rounded-circle them imgTab h-196`}
+                          src={this.formPropsData[UPDATE_GENERAL_FIELD_KEY.AVATAR_DAM]}
+                          alt={this.formPropsData[UPDATE_GENERAL_FIELD_KEY.USERNAME]}
+                        />
+                       <div className='position-absolute top-50 start-0 align-content-center fw-bold text-white imgcloud '>
+                          <FontAwesomeIcon icon={faCloudUploadAlt} className="d-block m-auto  "/>
+                          <span className='mx-3 my-5'>
+                              Click to change image
+                          </span>
+                       </div>
+
+>>>>>>> vinh
                       </div>
                     ) : null}
                     <div className="main_upload_images">
@@ -277,9 +321,17 @@ const UpdateGeneral = observer(
                     ) : null}
                   </div>
                 </AvatarDAM>
+<<<<<<< HEAD
                 <SubmitButton validateInfoBeforeSending={this.validateInfoBeforeSending} />
               </div>
             </div>
+=======
+
+              </div>
+            </div>
+
+
+>>>>>>> vinh
           )}
         </>
       );

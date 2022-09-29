@@ -6,6 +6,7 @@
 import React from 'react';
 import { withTranslation, useTranslation } from 'react-i18next';
 
+<<<<<<< HEAD
 const AvatarDAM = ({ children }) => {
   const { t } = useTranslation('common');
   return (
@@ -14,6 +15,18 @@ const AvatarDAM = ({ children }) => {
         <span className="text-blue-0">{t('txt_profile_picture')}</span>
       </label>
       <div className="border-da-1 mb-3">{children}</div>
+=======
+
+const AvatarDAM = ({ children }) => {
+  const { t } = useTranslation('common');
+
+  return (
+    <div className="col-3">
+      <label className="form-label mb-3" htmlFor="name">
+        <span className="text-blue-0">{t('Your Avatar')}</span>
+      </label>
+      <div className="mb-3">{children}</div>
+>>>>>>> vinh
     </div>
   );
 };
